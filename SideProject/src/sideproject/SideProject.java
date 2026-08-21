@@ -4,8 +4,9 @@ public class SideProject {
         Example2 obj = new Example2();
 //        obj.input();
 //        obj.outPut();
-obj.Squance();
-obj.display();
+//obj.Squance();
+//obj.display();
+ new Example3();
     }
     
 }
