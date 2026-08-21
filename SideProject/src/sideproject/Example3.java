@@ -1,21 +1,21 @@
 package sideproject;
-public class Example3 {
-    public Example3 () {
-//        for(int x=0; x<=10; x+=1) {
-//            System.out.print(x + ",");
-//        }
-//        int x=10;
-//        while(x>=1) {
-//            System.out.print(x +",");
-//            x-=1;
-//        }
 
-         for(int x=1; x<=10; x+=1){
-             for(int y=1; y<=10; y+=1) 
-                 System.out.print(x  + "\t");
-                 System.out.println( " ");
-              
-             }
+import java.util.Scanner;
+
+public class Example3 {
+    Scanner kb = new Scanner(System.in);
+            
+    public Example3 () {
+        System.out.println("Enter your Age");
+        int age = kb.nextInt();
+           System.out.println("Enter you grade");
+           int grade = kb.nextInt();
+           
+           if(age < 18 | grade < 60) {
+               System.out.println("your'e Failed");
+           }else {
+               System.out.println("passed welcome");
+           }
     }
     
 }
