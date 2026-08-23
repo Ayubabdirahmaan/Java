@@ -6,7 +6,8 @@ public class SideProject {
 //        obj.outPut();
 //obj.Squance();
 //obj.display();
- new Example3();
+// new Example3();
+ new Example4();
     }
     
 }
