@@ -12,7 +12,7 @@ public class Example4 {
         }else if(score < 60) {
             System.out.println("Your score is low");
         }else {
-            System.out.println("Welcome Man");
+            System.out.println("Welcome Man!");
         }
     }
 }
