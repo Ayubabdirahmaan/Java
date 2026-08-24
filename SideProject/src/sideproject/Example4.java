@@ -7,13 +7,12 @@ public class Example4 {
         int age = kb.nextInt();
         System.out.println("Enter you Score");
         int score = kb.nextInt();
-        
-        if(age  < 18) {
-            if(score < 60) {
-                System.out.println( age < 18 ? "You are child" : "Your score is low"  );
-            }
+        if(age < 18) {
+            System.out.println("Your are child");
+        }else if(score < 60) {
+            System.out.println("Your score is low");
         }else {
-            System.out.println("Welcome again to university ");
+            System.out.println("Welcome Man");
         }
     }
 }
