@@ -3,16 +3,26 @@ import java.util.Scanner;
 public class Example4 {
     Scanner kb = new Scanner(System.in);
     public Example4() {
-        System.out.println("Enter You age:");
-        int age = kb.nextInt();
-        System.out.println("Enter you Score");
-        int score = kb.nextInt();
-        if(age < 18) {
-            System.out.println("Your are child");
-        }else if(score < 60) {
-            System.out.println("Your score is low");
-        }else {
-            System.out.println("Welcome Man!");
+        System.out.println("Enter Number");
+        int number = kb.nextInt();
+        System.out.println("1.isku dar \n2.kala jar \n3.isku dhufo");
+        int max = kb.nextInt();
+        
+        switch(max) {
+            case 1:
+                System.out.println( number + number);
+                break;
+            case 2:
+                System.out.println("number - number");
+                break;
+            case 3:
+                System.out.println(number * number);
+                break;
+            default:
+                System.out.println("Macsalaamo");
         }
+        
+        
+     
     }
 }
