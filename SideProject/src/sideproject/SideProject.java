@@ -7,7 +7,8 @@ public class SideProject {
 //obj.Squance();
 //obj.display();
 // new Example3();
- new Example4();
+// new Example4();
+new Example6();
     }
     
 }
