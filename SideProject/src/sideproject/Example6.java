@@ -19,7 +19,7 @@ public class Example6 {
                     System.out.println("Enter You pin");
                     int newPin  = secure.nextInt();
                     if(newPass != newPin) {
-                        System.out.println("Incorrect Pin");
+                        System.out.println("Incorrect Pin!");
                     }else {
                         System.out.println("Again Welcome ");
                     }
