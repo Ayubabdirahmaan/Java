@@ -8,7 +8,8 @@ public class SideProject {
 //obj.display();
 // new Example3();
 // new Example4();
-new Example6();
+//new Example6();
+new Example7();
     }
     
 }
