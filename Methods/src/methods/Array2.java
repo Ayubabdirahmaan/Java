@@ -1,6 +1,4 @@
-
 package methods;
-
 public class Array2 {
     String [] names ={"Ayub", "Mohamed", "salah", "Salma"};
     public Array2() {
