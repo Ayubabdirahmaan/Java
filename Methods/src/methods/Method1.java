@@ -4,7 +4,7 @@ public class Method1 {
     public void dislpay () {
         System.out.println("Waan ku salaamay" + name);
     }
-    public static void show() {
+    public static void show(String name) {
         System.out.println("hi" + name);
     }
     
