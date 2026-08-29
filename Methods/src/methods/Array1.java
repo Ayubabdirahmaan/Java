@@ -1,23 +1,15 @@
-
 package methods;
-
 import java.util.Scanner;
-
 public class Array1 {
-    Scanner kb = new Scanner(System.in);
-    int tiro [];
+        Scanner kb = new Scanner(System.in);
+        int num [];
     public Array1() {
-        tiro =  new int[3];
-        for(int i=0;  i<tiro.length-1; i+=1){
-            System.out.println("Enter number " + (i+1) + ":");
-            tiro [i] = kb.nextInt();
-            tiro[tiro.length-1]+=tiro[i];
+        num = new int [3];
+        for(int i=0; i<num.length-1; i+=1) {
+             System.out.println("Enter number 1" + (i+1)+ ",");
+                num[i] = kb.nextInt();
         }
-        System.out.println("Total is: " + tiro [tiro.length-1]);
+        num[num.length-1] = num[0] + num[1];
+        System.out.println("Total is " + num[num.length-1]);
     }
-    }
-    
-    
-    
-    
 }
