@@ -4,7 +4,8 @@ public class Methods {
 //        Method1.show();
 //        Method1 obj = new Method1();
 //        obj.display()
-            new Array4();
+//            new Array4();
+                new Array5();
     }
     
 }
