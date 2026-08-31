@@ -5,7 +5,8 @@ public class Methods {
 //        Method1 obj = new Method1();
 //        obj.display()
 //            new Array4();
-                new Array5();
+//                new Array5();
+new Array6();
     }
     
 }
