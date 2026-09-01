@@ -6,7 +6,8 @@ public class Methods {
 //        obj.display()
 //            new Array4();
 //                new Array5();
-new Array6();
+//new Array6();
+new Array7();
     }
     
 }
