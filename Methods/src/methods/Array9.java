@@ -18,7 +18,7 @@ public class Array9 {
     }
     public void show() {
         for(int i=0; i< titls.length; i+=1)
-            System.out.println(titls[i] + "\t");
+            System.out.print(titls[i] + "\t");
         System.out.println("\n-----------------------------");
         for(int a=0; a< People.length; a+=1){
             for(int b=0; b<titls.length; b+=1)
