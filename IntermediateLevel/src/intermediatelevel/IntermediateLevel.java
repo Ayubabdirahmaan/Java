@@ -2,7 +2,8 @@ package intermediatelevel;
 
 public class IntermediateLevel {
     public static void main(String[] args) {
-        new Arrays()
+        Arrays obj = new Arrays();
+        obj.Arrays();
     }
     
 }
