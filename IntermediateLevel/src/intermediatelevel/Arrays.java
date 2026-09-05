@@ -10,7 +10,7 @@ public class Arrays {
           tiro[i] = kb.nextInt();
           tiro[tiro.length-1] +=tiro[i];
        }
-        System.out.println("Total is" + tiro[tiro.length-1] );
+        System.out.println("Total is " + tiro[tiro.length-1] );
        
     }
 }
