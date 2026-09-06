@@ -10,13 +10,15 @@ public class Array5 {
         for(int i=0; i<birthday.length; i+=1) {
             System.out.println("Enter birth year of person " +  (i+1)+ " : ");
             birthday[i] = kb.nextInt();
-            birthday[i] = birthday.length - 2026;
+            birthday[i] = 2026 - birthday.length;
          }
             System.out.println("1.Show All \n2.Show all sorted by total asc \n3.show all with sorted by total desc \n4.find maximy");
             int ch = kb.nextInt();
             switch(ch) {
                 case 1:
-                    System.out.println(birthday);
+                    for(int j=0; j<birthday.length; j+=1) 
+                        System.out.print(birthday[j] +  ",");
+                    System.out.println("");
                     break;
                 default:
                     System.out.println("macsalaamo");
