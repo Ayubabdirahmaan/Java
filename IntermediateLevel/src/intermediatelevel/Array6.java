@@ -16,7 +16,7 @@ public class Array6 {
              }
         }
     public Array6() {
-        
+        input();
     }
     
 }
