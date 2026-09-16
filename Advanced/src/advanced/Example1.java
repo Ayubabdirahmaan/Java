@@ -8,7 +8,7 @@ public class Example1 {
        try{
            File fi = new File(path);
            if(type.equals("file"))
-               System.out.println(fi.createNewFile()? "Create file:" : "not created file");
+               System.out.println(fi.createNewFile()? "Create file:" : "not created file:");
            else if(type.equals("folder"))
                System.out.println(fi.mkdir()? "folder created:" : "not created folder:");
        }catch(Exception ex) {
