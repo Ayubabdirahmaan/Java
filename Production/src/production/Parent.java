@@ -9,4 +9,7 @@ public class Parent {
         System.out.println("Enter Number 2:");
         b= kb.nextInt();
     }
+    public Parent(String name) {
+        
+    }
 }
