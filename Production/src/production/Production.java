@@ -1,7 +1,9 @@
 package production;
 public class Production {
     public static void main(String[] args) {
-        new Example1();
+        Child ob= new Child();
+        
+        ob.Input();
+        ob.show();
     }
-    
 }
