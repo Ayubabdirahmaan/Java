@@ -2,7 +2,8 @@
 package finalproject;
 public class FinalProject {
     public static void main(String[] args) {
-        new MyFile();
+        FileNames ob= new FileNames();
+        ob.InsertFiles("C:\\Users\\hp\\Desktop\\Salmaan/mode.php", "file");
     }
     
 }
