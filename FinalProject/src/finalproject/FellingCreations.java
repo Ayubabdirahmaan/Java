@@ -2,13 +2,12 @@ package finalproject;
 import java.io.File;
 public class FellingCreations {
     public void CreationFilling(String path, String type) {
-        
         try{
             File fi=new File(path);
-            if(fi.equals("File"))
-                System.out.println(f.createNewFile()?"creation file": "not creation file");
-            else if(fi.equals("folder"))
-                System.out.println(f.mkdir()?"creation folder" : "not creation folder");
+            if(type.equals("File"))
+                System.out.println(fi.createNewFile()?"creation file": "not creation file");
+            else if(type.equals("folder"))
+                System.out.println(fi.mkdir()?"creation folder" : "not creation folder");
         }catch(Exception ex) {
             System.out.println(ex.getMessage());
         }
