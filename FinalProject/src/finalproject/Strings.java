@@ -5,7 +5,9 @@ public class Strings {
     public void input() {
         System.out.println("Enter Username");
         String user = kb.nextLine();
-        System.out.println(user.toLowerCase());
+//        System.out.println(user.toLowerCase()); this is tolowercase
+//        System.out.println(user.toUpperCase()); this is to uppercase
+//            System.out.println(user.length());   this is length of string
     }
     public Strings() {
         input();
