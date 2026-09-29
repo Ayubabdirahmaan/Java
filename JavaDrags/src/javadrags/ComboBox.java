@@ -1,6 +1,7 @@
 
 package javadrags;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 
 public class ComboBox extends javax.swing.JFrame {
@@ -11,6 +12,9 @@ public class ComboBox extends javax.swing.JFrame {
         initComponents();
          for(String name:names)
         cmd.addItem(name);
+            
+         ButtonGroup g= new ButtonGroup();
+         g.add(f); g.add(m);
     }
 
     /** This method is called from within the constructor to
@@ -23,6 +27,9 @@ public class ComboBox extends javax.swing.JFrame {
     private void initComponents() {
 
         cmd = new javax.swing.JComboBox<>();
+        f = new javax.swing.JCheckBox();
+        m = new javax.swing.JCheckBox();
+        ck = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -33,13 +40,32 @@ public class ComboBox extends javax.swing.JFrame {
             }
         });
 
+        f.setText("Female");
+
+        m.setText("Male");
+
+        ck.setText("Choose ");
+        ck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addComponent(cmd, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(f)
+                            .addComponent(m)
+                            .addComponent(cmd, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(ck)))
                 .addContainerGap(135, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -47,7 +73,13 @@ public class ComboBox extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(108, 108, 108)
                 .addComponent(cmd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(m)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(f)
+                .addGap(28, 28, 28)
+                .addComponent(ck)
+                .addContainerGap(198, Short.MAX_VALUE))
         );
 
         pack();
@@ -57,6 +89,14 @@ public class ComboBox extends javax.swing.JFrame {
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null, "HI " +cmd.getSelectedItem());
     }//GEN-LAST:event_cmdActionPerformed
+
+    private void ckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckActionPerformed
+if(ck.isSelected()) {
+    cmd.setEnabled(false);
+}      else {
+      cmd.setEnabled(false);
+} 
+    }//GEN-LAST:event_ckActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,7 +134,10 @@ public class ComboBox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox ck;
     private javax.swing.JComboBox<String> cmd;
+    private javax.swing.JCheckBox f;
+    private javax.swing.JCheckBox m;
     // End of variables declaration//GEN-END:variables
 
 }
