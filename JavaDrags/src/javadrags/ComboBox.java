@@ -1,5 +1,8 @@
 
 package javadrags;
+
+import javax.swing.JOptionPane;
+
 public class ComboBox extends javax.swing.JFrame {
  String names[] = {"ayub", "mohamed","Salah"};
        
@@ -52,6 +55,7 @@ public class ComboBox extends javax.swing.JFrame {
 
     private void cmdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "HI " +cmd.getSelectedItem());
     }//GEN-LAST:event_cmdActionPerformed
 
     /**
