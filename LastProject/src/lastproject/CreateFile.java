@@ -13,6 +13,6 @@ public class CreateFile {
         }
     }
     public CreateFile() {
-        createFile("","File");
+        createFile("C:\\Users\\hp\\Desktop\\Test//somlai","folder");
     }
 }
