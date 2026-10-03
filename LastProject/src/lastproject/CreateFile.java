@@ -7,7 +7,7 @@ public class CreateFile {
             if(type.equals("File"))
                 System.out.println(f.createNewFile()? "Created File": "Not Created File");
             else 
-                System.out.println(f.mkdir()?"Created Folder": "Not Created Folder");
+                System.out.println(f.mkdir()?"Created Folder": "Not Created Folder.");
         }catch(Exception ex) {
             System.out.println(ex.getMessage());
         }
