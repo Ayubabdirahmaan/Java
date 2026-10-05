@@ -5,7 +5,7 @@ public class CreateFile {
         try{
             File f = new File(path);
             if(type.equals("File"))
-                System.out.println(f.createNewFile()? "Created File": "Not Created File");
+                System.out.println(f.createNewFile()? "Created File:": "Not Created File");
             else 
                 System.out.println(f.mkdir()?"Created Folder:": "Not Created Folder.");
         }catch(Exception ex) {
