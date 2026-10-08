@@ -12,6 +12,4 @@ public class Array1 {
         }
         System.out.println("Total is " + tiro[tiro.length-1]);
     }
-    
-    
 }
