@@ -9,7 +9,7 @@ public class Example1 {
         birthday=kb.nextInt();
     }
     public void show() {
-        int myAge = age - birthday;
-        System.out.println("Waxaad Jirtaa:  " + myAge + " Sano");
+        int myAges = age - birthday;
+        System.out.println("Waxaad Jirtaa:  " + myAges + " Sano");
     }
 }
