@@ -10,6 +10,6 @@ public class Example1 {
     }
     public void show() {
         int myAges = age - birthday;
-        System.out.println("Waxaad Jirtaa intaan :  " + myAges + " Sano!");
+        System.out.println("Waxaad Jirtaa intaan! :  " + myAges + " Sano!");
     }
 }
