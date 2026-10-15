@@ -7,7 +7,6 @@ public class Decision3 {
         int n=kb.nextInt();
         System.out.println("1.Squance \n2. cubic");
         int ch = kb.nextInt();
-        
         switch(ch) {
             case 1:
                 System.out.println("the square " +n  + " is" + n*n);
@@ -17,6 +16,7 @@ public class Decision3 {
                  break;
             default:
                 System.out.println("Macsalaamo");
+                break;
     }
         
     }
